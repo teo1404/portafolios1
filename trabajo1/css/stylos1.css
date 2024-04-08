@@ -33,7 +33,7 @@ body{
     width: 300px;
     background-color: white;
     border-radius: 14px;
-    box-shadow: 14px;
+    box-shadow: 20px;
     /*box-shadow: x y bluer z color       sombra exterior*/ 
     /*box-shadow: x y bluer z color       sombra exterior*/
 }
