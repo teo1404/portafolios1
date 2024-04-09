@@ -44,7 +44,17 @@ body{
     }
     & .producto{
         height: 300px;
-        width: ;
+        width: 100%;
+        background-color: blue;
+    }
+    & .desc_prod{
+        height: 240px;
+        width: 100%;
+        background-color: brown;
+    }
+    & .botonera{
+        height: 300px;
+        width: auto;
     }
 
 }
