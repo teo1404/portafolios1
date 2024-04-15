@@ -1,84 +1,118 @@
-:root{
-    --stast-font: "tachis" , sans-serif;
-    --manrope-font: "manrope" sans-serif;
-    --fondo-degradado: linear-gradient(180deg, red 10%, white 50%)
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Staatliches&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.tachis{
-    font-family: var(--stast-font);
+:root {
+    --staat-font: "Staatliches", sans-serif;
+    --manrope-font: "Manrope", sans-serif;
+    --fondo-degradado: linear-gradient(180deg, lightblue 0%, black 100%);
+    --negro90: rgb(33, 33, 33);
+}
+
+.staatliches-regular {
+    font-family: var(--staat-font);
     font-weight: 400;
     font-style: normal;
+
 }
 
-.manrope{
-    font-family: "manrope", sans-serif;
+.manrope {
+    font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
+
 }
 
-body{
+body {
     height: 100vh;
     width: 100%;
 }
 
-.container{
+.container {
     height: 100%;
     width: 100%;
     background: var(--fondo-degradado);
     display: grid;
     place-items: center;
-}
 
-.tarjeta{
+}
+.sombra{ box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.39);}
+
+
+.tarjeta {
     height: 550px;
     width: 300px;
     background-color: white;
     border-radius: 14px;
-    box-shadow: 20px;
-    /*box-shadow: x y bluer z color       sombra exterior*/ 
-    /*box-shadow: x y bluer z color       sombra exterior*/
-
+    /* BUSCAR EN W3SCHOOLS propiedades de BORDER RADIUS */
+    
+    
+    overflow: hidden;
+    
     & .encabezado{
-        background-color: white
+        background-color: red;
         height: 60px;
         width: 100%;
-    }
+    }  
     & .producto{
-        height: 300px;
-        width: 100%;
-        background-color: blue;
-    }
-    .talles{
-        background-color: yellow;
-        width: 50%;
-        display: flex;
-        margin: auto;
-        justify-content: space-between;
-       & .li{
-            background-color: aqua;
-            list-style: none;
-            border: solid 1px black;
-            height: 40px;
-            width: 40px;
-            border-radius: 50%;
-        }
-    }
-   
-    .linea{
-        height: 1px;
-        width: 100%;
-        background-color: black;
-    }
-    & .desc_prod{
         height: 240px;
         width: 100%;
-        background-color: rgb(255, 255, 255);
-    }
+        background-color: blue;
+    } 
+    & .desc_prod{
+        height: 200px;
+        width: 100%;
+        background-color: rgb(85, 85, 173);
+    } 
     & .botonera{
-        height: 300px;
-        width: auto;
+        height: 50px;
+        width: 100%;
+        background-color: blue;
+    } 
+
+}
+
+.talles{
+    width: 60%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    flex-direction: column;
+
+    & li{
+        list-style: none;
+        border: solid 1px rgb(255, 255, 255);
+        height: 30px;
+        width: 30px;
+        border-radius:50%;
+        text-align: center;
+        line-height: 1.8em;
+        font-weight: bolder;
+        color: white;
+    }
+
+    & li:nth-child(1){
+        background-color: black;
+    }
+
+    & li:nth-child(2){
+        background-color: black;
+    }
+
+    & li:nth-child(3){
+        background-color: black;
+    }
+
+    & li:nth-child(4){
+        background-color: black;
     }
 
 }
 
- 
-  
+
+
+/*BOX-SHADOW : X Y BLUR Z COLOR         SOMBRA EXTERIOR*/
+    /*BOX-SHADOW : INSET X Y BLUR Z COLOR   SOMBRA INTERIOR*/
