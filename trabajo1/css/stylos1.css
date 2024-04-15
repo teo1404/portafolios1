@@ -1,7 +1,7 @@
 :root{
     --stast-font: "tachis" , sans-serif;
     --manrope-font: "manrope" sans-serif;
-    --fondo-degradado: linear-gradient(180deg, red 0%, black 50%)
+    --fondo-degradado: linear-gradient(180deg, red 10%, white 50%)
 }
 
 .tachis{
@@ -47,10 +47,22 @@ body{
         width: 100%;
         background-color: blue;
     }
+    .talles{
+        background-color: yellow;
+        width: 50%;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .linea{
+        height: 1px;
+        width: 100%;
+        background-color: black;
+    }
     & .desc_prod{
         height: 240px;
         width: 100%;
-        background-color: brown;
+        background-color: rgb(255, 255, 255);
     }
     & .botonera{
         height: 300px;
