@@ -61,6 +61,7 @@ body {
         height: 240px;
         width: 100%;
         background-color: blue;
+        display: flex;
     } 
     & .desc_prod{
         height: 200px;
@@ -92,6 +93,7 @@ body {
         line-height: 1.8em;
         font-weight: bolder;
         color: white;
+        transition: all 0.2 ease-in-out;
     }
 
     & li:nth-child(1){
@@ -110,6 +112,13 @@ body {
         background-color: black;
     }
 
+}
+.costado {
+    background-color: #e78080;
+    width: 45px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 
