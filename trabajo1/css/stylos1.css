@@ -53,7 +53,7 @@ body {
     overflow: hidden;
     
     & .encabezado{
-        background-color: red;
+        background-color: rgb(238, 220, 220);
         height: 60px;
         width: 100%;
     }  
@@ -66,12 +66,12 @@ body {
     & .desc_prod{
         height: 200px;
         width: 100%;
-        background-color: rgb(85, 85, 173);
+        background-color: rgb(238, 220, 220);
     } 
     & .botonera{
         height: 50px;
         width: 100%;
-        background-color: blue;
+        background-color: rgb(238, 220, 220);
     } 
 
 }
@@ -114,7 +114,7 @@ body {
 
 }
 .costado {
-    background-color: #e78080;
+    background-color: #ebe9e9;
     width: 45px;
     height: 100%;
     display: flex;
